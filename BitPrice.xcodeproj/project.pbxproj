@@ -14,6 +14,8 @@
 		C25DF4E62840E0E60096A7F5 /* BitPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C25DF4E42840E0E60096A7F5 /* BitPrice.xcdatamodeld */; };
 		C25DF4E82840E0EA0096A7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25DF4E72840E0EA0096A7F5 /* Assets.xcassets */; };
 		C25DF4EB2840E0EA0096A7F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25DF4E92840E0EA0096A7F5 /* LaunchScreen.storyboard */; };
+		C25DF4F62840E1690096A7F5 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25DF4F52840E1690096A7F5 /* CoinManager.swift */; };
+		C25DF4F82840E1770096A7F5 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25DF4F72840E1770096A7F5 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C25DF4E72840E0EA0096A7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C25DF4EA2840E0EA0096A7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C25DF4EC2840E0EA0096A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25DF4F52840E1690096A7F5 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		C25DF4F72840E1770096A7F5 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,40 @@
 			children = (
 				C25DF4DB2840E0E60096A7F5 /* AppDelegate.swift */,
 				C25DF4DD2840E0E60096A7F5 /* SceneDelegate.swift */,
-				C25DF4DF2840E0E60096A7F5 /* ViewController.swift */,
-				C25DF4E12840E0E60096A7F5 /* Main.storyboard */,
+				C25DF4F42840E1180096A7F5 /* Models */,
+				C25DF4F32840E10A0096A7F5 /* Views */,
+				C25DF4F22840E0FE0096A7F5 /* Controller */,
 				C25DF4E72840E0EA0096A7F5 /* Assets.xcassets */,
 				C25DF4E92840E0EA0096A7F5 /* LaunchScreen.storyboard */,
 				C25DF4EC2840E0EA0096A7F5 /* Info.plist */,
 				C25DF4E42840E0E60096A7F5 /* BitPrice.xcdatamodeld */,
 			);
 			path = BitPrice;
+			sourceTree = "<group>";
+		};
+		C25DF4F22840E0FE0096A7F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C25DF4DF2840E0E60096A7F5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C25DF4F32840E10A0096A7F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C25DF4E12840E0E60096A7F5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C25DF4F42840E1180096A7F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C25DF4F52840E1690096A7F5 /* CoinManager.swift */,
+				C25DF4F72840E1770096A7F5 /* CoinData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25DF4F82840E1770096A7F5 /* CoinData.swift in Sources */,
 				C25DF4E02840E0E60096A7F5 /* ViewController.swift in Sources */,
 				C25DF4DC2840E0E60096A7F5 /* AppDelegate.swift in Sources */,
 				C25DF4DE2840E0E60096A7F5 /* SceneDelegate.swift in Sources */,
 				C25DF4E62840E0E60096A7F5 /* BitPrice.xcdatamodeld in Sources */,
+				C25DF4F62840E1690096A7F5 /* CoinManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
